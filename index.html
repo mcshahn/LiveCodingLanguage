@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf‐8">
+  <title> Hello web audio </title>
+</head>
+
+<body>
+  <p>This is an almost minimal command-based live coding engine. Press the button to re-evaluate your code.
+    This language allows you to specify a rhythmic pattern of beats by entering a space-separated list of times and pitches. 
+    You can also include javascript computation in the values.
+    <br>
+    <br>
+    New feature added: change oscillator by adding oscillator type at end of the code. Please make sure to add a space between the notes description and the oscillator type.
+    If the oscillator type isn't implemented in web audio, the sounds from the previously selected oscillator will continue to play. 
+  </p>
+  <p>1+1@110 3@500 1@200 1*3@100 sine</p>
+  <p>1+1@220 2@220*2 1*3@270 sawtooth</p>
+  <button>re-evaluate</button>
+  <input type="text" id="code">
+</body>
+<script src="main.js"> </script>
+
+</html>
+
